@@ -3,5 +3,12 @@ from species import *
 from movement import *
 from habitat import *
 
-bob = Betta("bob", "blue")
-betty = Betta("betty", "black")
+if __name__ == "__main__":
+    swim = Swimming()
+    bob = Betta("Bob", "blue")
+    bob.add_locomotion(swim)
+    betty = Betta("Betty", "black")
+    bob.add_locomotion(swim)
+
+    print(bob)
+    print(betty)
